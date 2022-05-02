@@ -1,0 +1,147 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+    --Very-light-gray: hsl(0, 0%, 95%); /*  (background, headings, buttons)  */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very-light-gray);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+main {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.card {
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    font-size: 3.2rem;
+}
+
+.info {
+    color: var(--Transparent-white);
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suv {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button {
+    width: 50%;
+    height: 45px;
+    background-color: var(--Very-light-gray);
+    border: 1px solid var(--Very-light-gray);
+    border-radius: 45px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedan .button {
+    color: var(--Bright-orange);
+}
+.suv .button {
+    color: var(--Dark-cyan);
+}
+.luxury .button {
+    color: var(--Very-dark-cyan);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 840px) {
+
+    body {
+        margin-top: 170px;
+    }
+
+    main {
+        flex-direction: row;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 74px;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .card {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title {
+        margin-left: 30px;
+    }
+
+    .info {
+        margin-left: 30px;
+    }
+
+    .button {
+        margin-left: 30px;
+    }
+
+    .sedan {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .luxury {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+}

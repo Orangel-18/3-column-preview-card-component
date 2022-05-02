@@ -29,4 +29,4 @@ Your users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### Check out the results here: 
+### Check out the results here: https://3-column-preview-card-component-orangel.netlify.app/
